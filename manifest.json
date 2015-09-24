@@ -1,0 +1,17 @@
+{
+  "name": "Stupid Twitter",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Make Twitter.com a better place.",
+  "permissions": [
+      "tabs", "http://*/*", "https://*/*"
+  ],
+  "icons": {
+      "128": "icon.png" },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["timeline.js"]
+    }
+  ]
+}
